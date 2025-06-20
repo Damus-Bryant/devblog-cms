@@ -1,0 +1,112 @@
+DevBlog CMS
+
+🔖 Project Name
+DevBlog CMS – A Custom Blog Platform with Auth and Admin Panel
+
+🎯 Project Goal
+Create a full-stack blog platform with:
+User roles (Admin, Author, Viewer)
+Auth system and admin dashboard
+Blog post creation and management
+Public frontend using Remix
+Backend using Django REST Framework
+Support for categories and comments
+
+🛠️ Technologies in Use
+Purpose	Tech
+Backend API	Django + Django REST Framework
+Frontend	Remix (React-based)
+Styling	HTML, CSS, JavaScript
+Database	PostgreSQL
+CMS Inspiration	WordPress (for design ideas)
+Version Control	Git + GitHub
+Development Tools	VS Code, Chrome, Windows
+
+🔐 Authentication
+User registration/login/logout (JWT or session-based)
+Roles:
+Admin: Full access
+Author: Create/edit/delete own posts, moderate comments
+Viewer: Read-only access to public content
+
+📝 Blog Posts
+Title, content (plain text for now), created_at, updated_at
+Authors can manage their own posts
+Public can read all posts
+
+🧰 Admin Panel
+Django admin to manage users, posts, categories, and comments
+
+🗂 Categories
+One category per post
+Admins manage categories
+
+💬 Comments
+Users can comment on posts
+Moderation (admins/authors can delete or flag)
+
+🌐 Remix Frontend
+Blog post listing page
+Single post view
+Categories filter
+Comment form on post page
+Auth system (login/logout)
+
+🧩 Suggested Django App Structure (with DRF)
+accounts/ – user auth, roles, permissions
+blog/ – post model, post API views, serializers
+comments/ – comment model and APIs
+categories/ – category model and APIs
+core/ – shared utilities or landing page API
+api/ – optional root-level configuration for DRF
+
+🗓️ Project Phases & Timeline
+📍 Phase 1: Project Setup & Planning
+Create GitHub repo and enable version control
+Initialize Django project and apps (accounts, blog, comments, categories)
+Install and configure Django REST Framework (DRF)
+Set up PostgreSQL database and .env config
+Define user roles and plan permissions
+Draft database schema (models for User, Post, Category, Comment)
+
+📍 Phase 2: Backend Development (Django + DRF)
+Implement custom User model with roles (Admin, Author, Viewer)
+Create serializers and viewsets for:
+Posts (list, detail, create, update, delete)
+Comments (create, moderate)
+Categories (list, assign to posts)
+Auth endpoints (login, register)
+Add permission classes (e.g., authors can only edit own posts)
+Test API using tools like Postman or Django browsable API
+
+📍 Phase 3: Frontend Development (Remix)
+Set up Remix frontend project
+Configure API calls to Django backend
+Build pages:
+Homepage / list of blog posts
+Single post view with comment section
+Category-based filtering
+Login / Logout / Register pages
+Protected author dashboard
+Style pages using CSS (or Tailwind if preferred)
+
+📍 Phase 4: Admin Panel & Extras
+Customize Django admin for:
+User management (roles, permissions)
+Blog post management
+Category & comment moderation
+Add admin dashboard (optional custom stats or charts)
+
+📍 Phase 5: Testing & QA
+Unit tests for models, serializers, views
+Integration tests for key API endpoints
+Frontend testing: navigation, form validation
+Cross-browser checks (Chrome, Firefox, Edge)
+
+📍 Phase 6: Deployment & Final Touches
+Choose deployment platforms:
+Backend: Render, Railway, or Fly.io
+Frontend: Vercel or Netlify
+Set up CI/CD (optional GitHub Actions)
+Add README, demo screenshots, deployment link
+Share project and ask for feedback (e.g., from Miraz 😄)
