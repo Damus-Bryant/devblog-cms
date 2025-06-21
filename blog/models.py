@@ -12,3 +12,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
+    def __str__(self):
+        return f"{self.author.username} on {self.post.title}"
