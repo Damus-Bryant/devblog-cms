@@ -28,3 +28,13 @@ categories
 ✅ Draft database schema (models for User, Post, Category, Comment),
 ✅ Set up .venv and requirements.txt,
 ✅ Added PostgreSQL to Path
+
+**Phase 2**
+✅ Implement custom User model with roles (Admin, Author, Viewer)
+✅ Create serializers and viewsets for:
+✅ Posts (list, detail, create, update, delete)
+✅ Comments (create, moderate)
+✅ Categories (list, assign to posts)
+✅ Auth endpoints (login, register)
+✅ Add permission classes (e.g., authors can only edit own posts)
+✅ Test API using tools like Postman or Django browsable API
