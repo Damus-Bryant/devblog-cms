@@ -68,6 +68,18 @@ Install and configure Django REST Framework (DRF)
 Set up PostgreSQL database and .env config
 Define user roles and plan permissions
 Draft database schema (models for User, Post, Category, Comment)
+********
+Complete
+********
+✅ Create GitHub repo and enable version control,
+✅ Initialize Django project and apps (accounts, blog, comments, categories),
+✅ Install and configure Django REST Framework (DRF),
+✅ Set up PostgreSQL database and .env config,
+✅ Define user roles and plan permissions,
+✅ Draft database schema (models for User, Post, Category, Comment),
+✅ Set up .venv and requirements.txt,
+✅ Added PostgreSQL to Path
+********
 
 📍 Phase 2: Backend Development (Django + DRF)
 Implement custom User model with roles (Admin, Author, Viewer)

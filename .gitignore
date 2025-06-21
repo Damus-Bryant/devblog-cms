@@ -1,0 +1,14 @@
+# Python junk
+__pycache__/
+*.pyc
+
+# Env
+.venv/
+.env
+
+# DB
+*.sqlite3
+db.sqlite3
+
+# VS Code
+.vscode/

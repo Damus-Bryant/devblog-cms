@@ -1,0 +1,30 @@
+**UPDATES**
+
+**EDIT** devblog/settings.py
+AUTH_USER_MODEL =
+accounts.user
+INSTALLED_APPS =
+rest_framework
+accounts
+blog
+categories
+comments
+DEFAULT_DB
+PostgreSQL
+
+**EDIT** models.py
+accounts
+comments
+blog
+accounts
+categories
+
+**Phase 1**
+✅ Create GitHub repo and enable version control,
+✅ Initialize Django project and apps (accounts, blog, comments, categories),
+✅ Install and configure Django REST Framework (DRF),
+✅ Set up PostgreSQL database and .env config,
+✅ Define user roles and plan permissions,
+✅ Draft database schema (models for User, Post, Category, Comment),
+✅ Set up .venv and requirements.txt,
+✅ Added PostgreSQL to Path
